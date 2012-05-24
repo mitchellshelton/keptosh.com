@@ -1,28 +1,8 @@
-</div>
-
-<div class="footer-border">
-
-    <div class="footer">   
-        <div class="cont_foot"></div>    
-    </div>
-
-    <div class="cont_foot2">
-        copyright &copy; <?php echo date("Y"); ?> Mitchell R.K. Shelton
-    </div>
-
-</div> 
-   
-</div>
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-822365-4");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-
-</body>
-</html>
+<ul>
+  <li><a href="/privacy" title="Read the privacy policy.">Privacy Policy</a></li>
+  <li>Copyright &copy; <?php print date("Y"); ?> Keptosh Media</li>
+</ul>
+<ul class="social">
+	<li><a class="twitter-link" href="http://twitter.com/keptosh" title="Follow Keptosh Media on Twitter."><span class="element-invisible element-focusable">Follow on Twitter</span></a></li>
+	<li><a class="facebook-link" href="http://www.facebook.com/pages/Keptosh/77560635886" title="Like Keptosh Media on Facebook."><span class="element-invisible element-focusable">Like on Facebook</span></a></li>
+</ul>

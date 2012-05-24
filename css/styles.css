@@ -1,0 +1,197 @@
+@charset "utf-8";
+/*
+	Sitename: http://www.keptosh.com/
+  Author: Mitchell R.K. Shelton
+
+  styles.css
+  Primary styles for site.
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Font Face Declaration ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@font-face {
+  font-family:"uni 05_54";
+  src: url("../fonts/uni05_54.eot?") format("eot"), url("../fonts/uni05_54.woff") format("woff"), url("../fonts/uni05_54.ttf") format("truetype"), url("../fonts/uni05_54.svg#Uni0554") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ The following is borrowed from Drupal 7 system.base.css. It is used to hide elements ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+.element-hidden {
+  display: none;
+}
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  left: 0px;
+}
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: static !important;
+  clip: auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Main Styles ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+body {
+	background-color: #000;
+}
+hr {
+	border: 1px solid #000;
+}
+a:link, a:visited {
+	color: #4A9BED;
+	text-decoration: none;
+}
+a:hover, a:active {
+	text-decoration: underline;
+	color: #336BA4;
+}
+img {
+	max-width: 100%;
+}
+header {
+	text-align: center;
+	padding: 50px 0px 50px 0px;
+	background-color: #eee;	
+}
+header img {
+	max-width: 288px;
+	padding: 2%;
+	width: 96%;
+}
+nav {
+	background-color: #22486e;
+	width: 100%;
+	height: 50px;
+	font-family: "uni 05_54";
+	text-shadow: 1px 1px 1px #000;
+}
+nav ul {
+	margin: 0px auto;
+	max-width: 960px;
+	width: 100%;
+}
+nav li { 
+	display: inline-block;
+	line-height: 40px;
+	border: 1px solid black;
+	height: 40px;
+	vertical-align: bottom;	
+	position: relative;
+	margin-top: 10px;
+}
+nav li a:link, nav li a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	height: 40px;
+	background-color: #428ad3;
+	padding: 0px 10px 0px 10px;
+	vertical-align: bottom;
+	border-top: 1px solid #4ea5fc;
+	border-left: 1px solid #4ea5fc;	
+	border-bottom: 1px solid #336ba4;
+	border-right: 1px solid #336ba4;		
+	text-transform: uppercase;
+	margin-bottom:10px;
+}
+nav li a:hover, nav li a:active {
+	background-color: #4a9bed;
+}
+#container {
+	background-color: white;
+	padding-bottom: 5px;
+}
+h2.page-title {
+	background-color: #428ad3;
+	border: 1px solid #000;
+	height: 48px;
+	line-height: 50px;
+	margin: 0px auto;
+	max-width: 960px;
+	width: 95%;
+	text-align: right;
+	padding-right: 10px;
+	position: relative;
+	z-index: 99;
+	color: #fff;
+	font-family: "uni 05_54";
+	text-shadow: 1px 1px 1px #000;
+	font-weight: normal;
+}
+article {
+	margin: 0px auto;
+	max-width: 960px;
+	width: 95%;
+	border: 1px solid #bababa;
+	background-color: #eee;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-family: "uni 05_54";
+	font-size: 1em;
+}
+#projects p, #about p, #privacy p, #welcome p {
+	margin: 5px 0 10px 0; 
+}
+footer {
+	background-color: #000;
+	color: #fff;
+	font-family: "uni 05_54";
+	font-size: .5em;
+	font-weight: normal;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+}
+footer ul {
+	margin: 0px auto;
+	max-width: 960px;
+	width: 100%;
+	padding-top: 10px;
+}
+footer li {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+}
+footer ul.social li {
+	display: inline-block;
+}
+footer li a:link, footer li a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+footer li a:hover, footer li a:active {
+	text-decoration: underline;
+}
+footer .twitter-link {
+	background-image: url('../images/twitter.png');
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  display: block;
+}
+footer .twitter-link:hover, footer .twitter-link:active {
+  background-image: url('../images/twitter.png');
+  background-position: 0px 0px;
+}
+footer .facebook-link {
+	background-image: url('../images/facebook.png');
+  background-position: 0px -32px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  display: block;
+}
+footer .facebook-link:hover, footer .facebook-link:active {
+  background-image: url('../images/facebook.png');
+  background-position: 0px 0px;
+}

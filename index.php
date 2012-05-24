@@ -1,20 +1,65 @@
-<?php include("include/header.php"); ?>
+<?php
 
-Welcome to the official Keptosh franchise website.
-<br /><br />
+if ($_SERVER['SERVER_NAME'] != 'keptosh.com') {
+  error_reporting(E_NOTICE);
+  ini_set("display_errors", 1);
+}
 
-This site has been designed as a repository for the current and past progress on different aspects of the Keptosh franchise. Originally conceived as a simple side character in a Science Fiction novel Adis Keptosh grew into a main character in a Cybepunk novel.
-<br /><br />
+// Global Variables
+$site_title = 'Keptosh Media';
+$analytics_code = "''";
 
-From this evolution Keptosh was taken into the world of the Adventure Game. After being received well by the Adventure Game Studio Community the Keptosh game underwent a few short lived redevelopment attempts.
-<br /><br />
+if (!isset($_GET['id'])) {
+  $_GET['id'] = 'welcome';
+}
+if (!isset($_GET['page'])) {
+  $_GET['page'] = 'null';
+}
 
-As part of the writing process a screenplay has been planned to facilitate the fleshing out of the storyline. The theory here also being that this increases the value of the franchise with this work already being completed once the novel is written.
-<br /><br />
+switch ($_GET['id']) {
+  case 'welcome':
+    $page_title = 'Welcome';
+    $canonical_name = '/welcome';
+    $shortlink_name = '?id=welcome';
+    $page_name = 'content/welcome.php';
+    $uses_js = FALSE;
+  break;
+  case 'projects':
+    $page_title = 'Projects';
+    $canonical_name = '/projects';
+    $shortlink_name = '?id=projects';
+    $page_name = 'content/projects.php';
+    $uses_js = FALSE;
+  break;
+  case 'about':
+    $page_title = 'About';
+    $canonical_name = '/about';
+    $shortlink_name = '?id=about';
+    $page_name = 'content/about.php';
+    $uses_js = FALSE;
+  break;
+  case 'contact':
+    $page_title = 'Contact';
+    $canonical_name = '/contact';
+    $shortlink_name = '?id=contact';
+    $page_name = 'content/contact.php';
+    $uses_js = FALSE;
+  break;
+  case 'privacy':
+    $page_title = 'Privacy Policy';
+    $canonical_name = '/privacy';
+    $shortlink_name = '?id=privacy';
+    $page_name = 'content/privacy.php';
+    $uses_js = FALSE;
+  break;
+  default:
+    $page_title = 'Welcome';
+    $canonical_name = '/welcome';
+    $shortlink_name = '?id=welcome';
+    $page_name = 'content/welcome.php';
+    $uses_js = FALSE;
+}
 
-<p>Primarily a product of the nomination of the adventure game for best music it was decided to produce a soundtrack for Keptosh. Once again, this being seen as increasing the value of the franchise.
-<br /><br />
+include('html.php');
 
-Keptosh has always been a labor of love and constantly being reworked, rewritten, and developed again and again. Over the years Adis has grown tremendously and his story has matured a great deal. What Adis was in 1995 is an unrecognizable character compared to the vision of him today.
-
-<?php include("include/footer.php"); ?>
+?>

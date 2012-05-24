@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*
+  Sitename: http://www.keptosh.com/
+  Author: Mitchell R.K. Shelton
+
+  mobile.css
+  All media queries for responsive design go here.
+*/
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~ Mobile ~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ */
+@media handheld, only screen and (max-width: 445px) {
+  .mobile-hide {
+    display: none;
+  }
+  nav li {
+	  display: block;
+	  width: 100%;
+	  margin: 0px;
+  }
+  nav {
+	  height: auto;
+	  margin-bottom: 3px;
+  }
+  nav li a:link, nav li a:visited {
+	  font-size: .1em;
+	  padding: 1px;
+	  width: 100%;
+	  padding-left: 10px;
+  }
+}
