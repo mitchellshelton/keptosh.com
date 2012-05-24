@@ -17,11 +17,11 @@
   
   <!-- stylesheets -->
   <?php if($page_title == "Contact") { // Only load formalize on the contact page ?>
-    <link rel="stylesheet" href="/css/formalize.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/formalize.css" type="text/css" media="screen">
   <?php } ?>
-  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen" charset="utf-8">
-  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen" charset="utf-8">
-  <link rel="stylesheet" href="/css/mobile.css" type="text/css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="/css/mobile.css" type="text/css" media="screen">
       
   <?php if($uses_js == TRUE) { // Only load custom javascript on pages that use it ?>
   <!-- javascript -->
@@ -49,7 +49,7 @@
   
 </head>
 
-  <body id="<?php echo $_GET['id']; ?>">
+  <body id="<?php echo $_GET['id']; ?>-page">
     <?php include('theme.php'); ?>
   </body>
  
