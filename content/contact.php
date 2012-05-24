@@ -72,13 +72,28 @@ if ($submitted == 1) {
   $error .= '</ul>';
   
   if ($dispError == 0) {
+  		
+  	// Clean up injection stuff
+		$email = preg_replace("([\r\n])", "", $email);
+		$find = "/(content-type|bcc:|cc:)/i";
+		if (preg_match($find, $name) || preg_match($find, $email) || preg_match($find, $subject) || preg_match($find, $message)) {
+			echo "<h1>Error</h1>\n
+			<p>No meta/header injections, please.</p>";
+			exit;
+		}
+  
     // Send email here   
-    $to      = 'junc@juncmodule.com';
-    $headers = 'From: ' . $email . "\r\n" .
-    'Reply-To: ' . $email . "\r\n" .
+    $headers = 'From: junc@juncmodule.com' . "\r\n" .
+    'Reply-To: junc@juncmodule.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
     
-    if (mail($to, $subject, $message, $headers)) {
+    // Add on the name
+    $message = $name . ' says:<br /><br />' . $message;
+    
+    // make sure each line doesn't exceed 70 characters
+    $message = wordwrap($message, 70);
+    
+    if (mail($email, $subject, $message, $headers)) {
 	    echo("<p>Message successfully sent!</p>");
 	  }    
   }
