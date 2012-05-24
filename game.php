@@ -1,7 +1,7 @@
 <?php include("include/header.php"); ?>
 
 <h3><a href="downloads/keptosh.zip">Keptosh version 1.0</a> </h3>
-    <p>
+<p>
     <a href="downloads/keptosh.zip"><img src="images/kep_game1.png" alt="Keptosh 1.0 Main Character" width="54" height="102" hspace="10" vspace="5" border="1" align="left" /></a>
     On January 29th 2003 the first Keptosh game was released. Created using  <a href="http://www.adventuregamestudio.co.uk/">Adventure Game Studio</a> the game received praise from members of the AGS community. It was nominated for Best Game and Best Sound/Music in the <a href="http://www.adventuregamers.com/display.php?id=339">2003 AG Underground Awards</a>. The game was favorably <a href="http://www.adventuregamers.com/article/id,279">reviewed</a> by Dave Gilbert.</p>
 
