@@ -88,7 +88,7 @@ if ($submitted == 1) {
     'X-Mailer: PHP/' . phpversion();
     
     // Add on the name
-    $message = $name . ' says:<br /><br />' . $message;
+    $message = $name . ' says:' . $message;
     
     // make sure each line doesn't exceed 70 characters
     $message = wordwrap($message, 70);
@@ -110,7 +110,6 @@ if ($submitted == 1) {
 	else {
 	?>
 
-		<p style="border: 1px solid #000; background-color: #fff; padding: 20px;">This form is being wonky, it might not be working right now. Just contact me on twitter or facebook (links in the footer) until I stop being a terrible developer.</p>
     <form id="contactform" name="contact" action="/contact" method="post">
       
         <?php

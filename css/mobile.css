@@ -16,7 +16,7 @@
   }
   nav li {
 	  display: block;
-	  width: 100%;
+	  width: 99%;
 	  margin: 0px;
   }
   nav {
@@ -24,9 +24,7 @@
 	  margin-bottom: 3px;
   }
   nav li a:link, nav li a:visited {
-	  font-size: .1em;
-	  padding: 1px;
-	  width: 100%;
-	  padding-left: 10px;
+	  padding-left: 2%;
+	  width: 96%;
   }
 }
