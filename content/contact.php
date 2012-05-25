@@ -83,17 +83,17 @@ if ($submitted == 1) {
 		}
   
     // Send email here   
-    $headers = 'From: junc@juncmodule.com' . "\r\n" .
-    'Reply-To: junc@juncmodule.com' . "\r\n" .
+    $headers = 'From: admin@keptosh.com' . "\r\n" .
+    'Reply-To: admin@keptosh.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
     
     // Add on the name
-    $message = $name . ' says:' . $message;
+    $message = $name . ' from: ' . $email . ' -> says: ' . $message;
     
     // make sure each line doesn't exceed 70 characters
     $message = wordwrap($message, 70);
     
-    if (mail($email, $subject, $message, $headers)) {
+    if (mail('admin@keptosh.com', $subject, $message, $headers)) {
 	    echo("<p>Message successfully sent!</p>");
 	  }    
   }
