@@ -1,5 +1,13 @@
 <?php
 switch ($_GET['page']) {
+	case 'voidtrader':
+	  $project_title = 'Void Trader';
+    $project_description = '<p><a href="http://voidtrader.com" title="Visit the Void Trader website.">voidtrader.com</a></p>';
+	break;
+	case 'heroesoferadin':
+	  $project_title = 'Heroes of Eradin';
+    $project_description = '<p><a href="http://heroesoferadin.com" title="Visit the Heroes of Eradin website.">heroesoferadin.com</a></p>';
+	break;
   case 'keptosh':
     $project_title = 'Keptosh: The Search for junc';
     $project_description = '
@@ -43,6 +51,8 @@ switch ($_GET['page']) {
   <?php if ($project_title == 'PROJECTINDEX') { ?>
   <p>Our current projects are listed below.</p>
   <ul>
+  	<li><a href="/projects/voidtrader" title="Visit the Void Trader project page.">Void Trader</a>
+  	<li><a href="/projects/heroesoferadin" title="Visit the Heroes of Eradin project page.">Heroes of Eradin</a>
   	<li><a href="/projects/keptosh" title="View the Keptosh project.">Keptosh: The Search for junc</a></li>
   </ul>
   <?php } else { ?>

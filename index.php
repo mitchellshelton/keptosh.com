@@ -7,7 +7,7 @@ if ($_SERVER['SERVER_NAME'] != 'keptosh.com') {
 
 // Global Variables
 $site_title = 'Keptosh Media';
-$analytics_code = "''";
+$analytics_code = "'UA-822365-4'";
 
 if (!isset($_GET['id'])) {
   $_GET['id'] = 'welcome';
