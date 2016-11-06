@@ -38,13 +38,6 @@ switch ($_GET['id']) {
     $page_name = 'content/about.php';
     $uses_js = FALSE;
   break;
-  case 'contact':
-    $page_title = 'Contact';
-    $canonical_name = '/contact';
-    $shortlink_name = '?id=contact';
-    $page_name = 'content/contact.php';
-    $uses_js = FALSE;
-  break;
   case 'privacy':
     $page_title = 'Privacy Policy';
     $canonical_name = '/privacy';

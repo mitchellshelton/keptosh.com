@@ -58,7 +58,7 @@ img {
 header {
 	text-align: center;
 	padding: 50px 0px 50px 0px;
-	background-color: #eee;	
+	background-color: #eee;
 }
 header img {
 	max-width: 288px;
@@ -77,12 +77,12 @@ nav ul {
 	max-width: 960px;
 	width: 100%;
 }
-nav li { 
+nav li {
 	display: inline-block;
 	line-height: 40px;
 	border: 1px solid black;
 	height: 40px;
-	vertical-align: bottom;	
+	vertical-align: bottom;
 	position: relative;
 	margin-top: 10px;
 }
@@ -95,9 +95,9 @@ nav li a:link, nav li a:visited {
 	padding: 0px 10px 0px 10px;
 	vertical-align: bottom;
 	border-top: 1px solid #4ea5fc;
-	border-left: 1px solid #4ea5fc;	
+	border-left: 1px solid #4ea5fc;
 	border-bottom: 1px solid #336ba4;
-	border-right: 1px solid #336ba4;		
+	border-right: 1px solid #336ba4;
 	text-transform: uppercase;
 	margin-bottom:10px;
 }
@@ -138,7 +138,7 @@ article {
 	font-size: 1em;
 }
 #projects p, #about p, #privacy p, #welcome p {
-	margin: 5px 0 10px 0; 
+	margin: 5px 0 10px 0;
 }
 footer {
 	background-color: #000;
